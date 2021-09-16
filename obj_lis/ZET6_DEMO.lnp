@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"..\obj_lis\main.o"
+"..\obj_lis\sys.o"
+"..\obj_lis\delay.o"
+"..\obj_lis\bsp_adc.o"
+"..\obj_lis\ds18b20.o"
+"..\obj_lis\bsp_usart1.o"
+"..\obj_lis\core_cm3.o"
+"..\obj_lis\stm32f10x_it.o"
+"..\obj_lis\system_stm32f10x.o"
+"..\obj_lis\startup_stm32f10x_hd.o"
+"..\obj_lis\misc.o"
+"..\obj_lis\stm32f10x_exti.o"
+"..\obj_lis\stm32f10x_gpio.o"
+"..\obj_lis\stm32f10x_i2c.o"
+"..\obj_lis\stm32f10x_rcc.o"
+"..\obj_lis\stm32f10x_sdio.o"
+"..\obj_lis\stm32f10x_tim.o"
+"..\obj_lis\stm32f10x_usart.o"
+"..\obj_lis\stm32f10x_adc.o"
+"..\obj_lis\stm32f10x_dma.o"
+--library_type=microlib --strict --scatter "..\obj_lis\ZET6_DEMO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\obj_lis\ZET6_DEMO.map" -o ..\obj_lis\ZET6_DEMO.axf
